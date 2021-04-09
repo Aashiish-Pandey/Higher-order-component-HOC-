@@ -5,7 +5,7 @@ class Counter extends Component {
   render() {
     return (
       <div>
-        <button onClick={() => this.props.incrementCount()}>
+        <button onClick={() => this.props.incrementCount()}>{this.props.name}
           Clicked {this.props.count} times
         </button>
       </div>
@@ -13,4 +13,4 @@ class Counter extends Component {
   }
 }
 
-export default UpdatedComponent(Counter);
+export default UpdatedComponent(Counter,10);
